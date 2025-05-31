@@ -1,0 +1,162 @@
+/* Color scheme: https://www.fabmood.com/blue-grey-and-purple-color-scheme-49/ */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #896f8c;
+    /* Adjust background color as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Centered brand */
+header>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+/* Center logo/text */
+header>div>a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #c0b6bf;
+    text-decoration: none;
+}
+
+/* Right nav */
+header nav {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header nav div {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #c0b6bf;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+section {
+    background-color: #c0b6bf;
+    width: 100%;
+    padding: 20px 0;
+    /* Vertical padding */
+}
+
+section>div {
+    width: 80%;
+    color: #6d7988;
+    margin: 0 auto;
+    /* Center the content */
+    box-sizing: border-box;
+}
+
+
+/* Body Styling */
+.team-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* Removed align-items: center and min-height */
+  margin-top: 2rem; /* Optional: adds some space from the top */
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.team-member {
+  background-color: #f2f2f2;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Footer Styling */
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #5d455f;
+    /* Light background, adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+    /* Change to 'absolute' or 'fixed' if you want sticky behavior */
+    bottom: 0;
+}
+
+/* Optional: style the inner content */
+/* footer div {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+} */
+
+/* Style the list of links */
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Style each list item */
+/* footer ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}  */
+
+/* Style the SVG icons */
+footer svg {
+    width: 18px;
+    height: 16px;
+    fill: #c0b6bf;
+}
+
+/* Text link styling */
+footer a {
+    text-decoration: none;
+    color: #c0b6bf;
+    font-weight: 500;
+}
