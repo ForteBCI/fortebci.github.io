@@ -106,7 +106,6 @@ section>div {
 }
 
 
-
 /* Footer Styling */
 footer {
     height: 100px;
@@ -137,7 +136,7 @@ footer ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
 }
 
 /* Style each list item */
@@ -149,8 +148,8 @@ footer ul {
 
 /* Style the SVG icons */
 footer svg {
-    width: 18px;
-    height: 16px;
+    width: 40px;
+    height: 40px;
     fill: #c0b6bf;
 }
 
