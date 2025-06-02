@@ -1,42 +1,61 @@
 /* Color scheme: https://www.fabmood.com/blue-grey-and-purple-color-scheme-49/ */
+:root {
+    --color-dark-purple: #1b1f3b;
+    --color-purple: #6a0dad;
+    --color-ice-blue: #9ef8ee;
+    --color-bright-pink: #ff6b81;
+    --color-neon-green: #32ff6a;
+    --color-gray: #e6e6e6;
+}
+
 
 html,
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 }
 
 /* Header Styling */
 header {
     height: 100px;
     width: 100%;
-    background-color: #896f8c;
-    /* Adjust background color as needed */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-    box-sizing: border-box;
-    position: relative;
-}
-
-/* Centered brand */
-header>div {
+    background-color: var(--color-purple);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     position: relative;
 }
 
-/* Center logo/text */
-header>div>a {
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo svg {
+    height: 60px;
+    width: 60px;
+    fill: var(--color-ice-blue);
+}
+
+.brand-name {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-size: 24px;
     font-weight: bold;
-    color: #c0b6bf;
+    color: var(--color-ice-blue);
     text-decoration: none;
 }
 
@@ -55,13 +74,13 @@ header nav div {
 
 header nav a {
     text-decoration: none;
-    color: #c0b6bf;
+    color: var(--color-ice-blue);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 section {
-    background-color: #c0b6bf;
+    background-color: var(--color-gray);
     width: 100%;
     padding: 20px 0;
     /* Vertical padding */
@@ -69,7 +88,7 @@ section {
 
 section>div {
     width: 80%;
-    color: #6d7988;
+    color: var(--color-purple);
     margin: 0 auto;
     /* Center the content */
     box-sizing: border-box;
@@ -78,31 +97,32 @@ section>div {
 
 /* Body Styling */
 .team-container {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  /* Removed align-items: center and min-height */
-  margin-top: 2rem; /* Optional: adds some space from the top */
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* Removed align-items: center and min-height */
+    margin-top: 2rem;
+    /* Optional: adds some space from the top */
 }
 
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
 }
 
 .team-member {
-  background-color: #f2f2f2;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  aspect-ratio: 1 / 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    background-color: #896f8c;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -110,7 +130,7 @@ section>div {
 footer {
     height: 100px;
     width: 100%;
-    background-color: #5d455f;
+    background-color: var(--color-dark-purple);
     /* Light background, adjust as needed */
     display: flex;
     align-items: center;
@@ -150,12 +170,12 @@ footer ul {
 footer svg {
     width: 40px;
     height: 40px;
-    fill: #c0b6bf;
+    fill: var(--color-ice-blue);
 }
 
 /* Text link styling */
-footer a {
+/* footer a {
     text-decoration: none;
     color: #c0b6bf;
     font-weight: 500;
-}
+} */
