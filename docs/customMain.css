@@ -132,6 +132,8 @@ section>div {
     object-fit: cover;
     margin: 0;
     border: 3px solid var(--color-purple);
+    transition: border-color 0.3s ease;
+
 }
 
 .btn {
@@ -143,18 +145,28 @@ section>div {
     border-radius: 8px;
     font-weight: bold;
     font-size: 14px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.team-photo:hover {
+    border-color: var(--color-bright-pink);
+}
+
+/* .team-member:hover h3,
+.team-member:hover p {
+    color: var(--color-bright-pink);
+} */
 
 .btn:hover {
     background-color: var(--color-bright-pink);
     color: var(--color-ice-blue);
 }
+
 .team-member h3,
 .team-member p,
 .team-member .btn,
 .team-photo {
-  margin: 0.5rem;
+    margin: 0.5rem;
 }
 
 /* Footer Styling */
