@@ -122,18 +122,12 @@ section {
 }
 
 #section-1 {
-    background-image: url('/media/device.jpg');
+    background-image: url('../media/device.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* min-height: 30vh; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* color: white; */
-    /* text-align: center; */
-    /* padding: 2rem; */
+
 }
 
 #section-2 {
