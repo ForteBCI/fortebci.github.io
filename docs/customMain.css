@@ -221,11 +221,11 @@ section {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .section-3-image img:hover {
-    transform: scale(1.05);
+    transform: scale(1.5);
 }
 
 @media (max-width: 900px) {
@@ -256,7 +256,7 @@ section {
     background-color: rgba(230, 230, 230, 0.8);
 }
 
-#section-4 {
+#founders {
     background:
         linear-gradient(rgba(230, 230, 230, 0.8), rgba(230, 230, 230, 0.9)),
         url('/media/device.jpg');
@@ -402,31 +402,31 @@ section>div {
     border-radius: 50%;
     object-fit: cover;
     margin: 0;
-    border: 3px solid var(--color-purple);
+    border: 4px solid var(--color-purple);
     transition: border-color 0.2s ease;
 
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--color-purple);
-    color: var(--color-gray);
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 14px;
-    transition: background-color 0.2s ease, color 0.2s ease;
+.member-link svg {
+  width: 40px;
+  height: 40px;
+  fill: var(--color-purple);
+  transition: fill 0.2s ease;
+}
+
+.member-link:hover svg {
+  fill: var(--color-bright-pink);
+}
+
+.team-member a.member-link {
+  margin-top: 0.5rem;
+  display: inline-block;
 }
 
 .team-photo:hover {
     border-color: var(--color-bright-pink);
 }
 
-.btn:hover {
-    background-color: var(--color-bright-pink);
-    color: var(--color-ice-blue);
-}
 
 .team-member h3,
 .team-member p,
