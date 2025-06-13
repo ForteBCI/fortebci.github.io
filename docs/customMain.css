@@ -1,11 +1,10 @@
-/* Color scheme: https://www.fabmood.com/blue-grey-and-purple-color-scheme-49/ */
 :root {
-    --color-dark-purple: #1b1f3b;
-    --color-purple: #6a0dad;
-    --color-ice-blue: #9ef8ee;
-    --color-bright-pink: #ff6b81;
-    --color-neon-green: #32ff6a;
-    --color-gray: #e6e6e6;
+    --color-dark-blue: #0e004a;
+    --color-med-blue: #3211b2;
+    --color-light-blue: #00aaff;
+    --color-dark-purple: #3b3165;
+    --color-purple: #5d0085;
+    --color-white: #f4eef7;
 }
 
 h1 {
@@ -30,7 +29,7 @@ body {
 header {
     height: 175px;
     width: 100%;
-    background-color: var(--color-purple);
+    background-color: var(--color-dark-blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,9 +52,14 @@ header {
 }
 
 .logo svg {
-    height: 70px;
-    width: 70px;
-    fill: var(--color-ice-blue);
+    height: 90px;
+    width: 90px;
+    fill: var(--color-light-blue);
+    transition: fill 0.2s ease;
+}
+
+.logo:hover svg {
+    fill: var(--color-dark-purple);
 }
 
 .brand-name {
@@ -64,7 +68,7 @@ header {
     transform: translateX(-50%);
     font-size: 36px;
     font-weight: bold;
-    color: var(--color-ice-blue);
+    color: var(--color-white);
     text-decoration: none;
     transition: color 0.2s ease;
 
@@ -89,7 +93,7 @@ header nav div {
         flex-direction: column;
         align-items: flex-end;
         gap: 10px;
-        background-color: var(--color-purple);
+        background-color: var(--color-med-blue);
         padding: 10px;
     }
 
@@ -103,7 +107,7 @@ header nav div {
 
 header nav a {
     text-decoration: none;
-    color: var(--color-ice-blue);
+    color: var(--color-light-blue);
     font-weight: 500;
     font-size: 18px;
     transition: color 0.2s ease;
@@ -111,14 +115,13 @@ header nav a {
 }
 
 header a:hover {
-    color: var(--color-bright-pink);
+    color: var(--color-dark-purple);
 }
 
 section {
-    background-color: var(--color-gray);
+    background-color: var(--color-white);
     width: 100%;
     padding: 20px 0;
-    /* Vertical padding */
 }
 
 #section-1 {
@@ -127,12 +130,11 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 #section-2 {
     background:
-        linear-gradient(rgba(230, 230, 230, 0.8), rgba(230, 230, 230, 0.9)),
+        linear-gradient(rgba(244, 238, 247, 0.8), rgba(244, 238, 247, 0.8)),
         url('/media/device.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -203,8 +205,7 @@ section {
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
-    color: var(--color-gray);
-    /* White text on dark background */
+    color: var(--color-white);
 }
 
 .section-3-image {
@@ -245,20 +246,14 @@ section {
 }
 
 .background-box {
-    background-color: rgba(230, 230, 230, 0);
-    /* initial 0 opacity */
+    background-color: rgba(244, 238, 247, 0.8);
     border-radius: 16px;
     padding: 1.5rem;
-    transition: background-color 0.5s ease;
-}
-
-.hover-box:hover .background-box {
-    background-color: rgba(230, 230, 230, 0.8);
 }
 
 #founders {
     background:
-        linear-gradient(rgba(230, 230, 230, 0.8), rgba(230, 230, 230, 0.9)),
+        linear-gradient(rgba(244, 238, 247, 0.8), rgba(244, 238, 247, 0.9)),
         url('/media/device.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -283,7 +278,7 @@ section {
     margin-left: auto;
     margin-right: 0;
     text-align: center;
-    color: var(--color-purple);
+    color: var(--color-med-blue);
 
 }
 
@@ -294,7 +289,7 @@ section {
 
 section>div {
     width: 80%;
-    color: var(--color-purple);
+    color: var(--color-med-blue);
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -325,7 +320,7 @@ section>div {
     }
 
     .background-box {
-        background-color: rgba(230, 230, 230, 0.8);
+        background-color: rgba(244, 238, 247, 0.8);
         /* Ensure it appears even on small screens */
     }
 }
@@ -366,7 +361,7 @@ section>div {
 }
 
 .team-member {
-    background-color: rgba(230, 230, 230, 0.5);
+    background-color: rgba(244, 238, 247, 0.5);
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -396,7 +391,7 @@ section>div {
 }
 
 .team-member:hover {
-    background-color: var(--color-gray);
+    background-color: var(--color-white);
 }
 
 .team-photo {
@@ -405,7 +400,7 @@ section>div {
     border-radius: 50%;
     object-fit: cover;
     margin: 0;
-    border: 4px solid var(--color-purple);
+    border: 4px solid var(--color-med-blue);
     transition: border-color 0.2s ease;
 
 }
@@ -413,12 +408,12 @@ section>div {
 .member-link svg {
     width: 40px;
     height: 40px;
-    fill: var(--color-purple);
+    fill: var(--color-med-blue);
     transition: fill 0.2s ease;
 }
 
 .member-link:hover svg {
-    fill: var(--color-bright-pink);
+    fill: var(--color-light-blue);
 }
 
 .team-member a.member-link {
@@ -427,7 +422,7 @@ section>div {
 }
 
 .team-photo:hover {
-    border-color: var(--color-bright-pink);
+    border-color: var(--color-light-blue);
 }
 
 
@@ -442,22 +437,13 @@ section>div {
 footer {
     height: 175px;
     width: 100%;
-    background-color: var(--color-dark-purple);
+    background-color: var(--color-dark-blue);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0px;
     box-sizing: border-box;
-    /* position: relative; */
-    /* bottom: 0; */
 }
-
-/* Optional: style the inner content */
-/* footer div {
-    width: 100%;
-    max-width: 1200px;
-    text-align: center;
-} */
 
 /* Style the list of links */
 footer ul {
@@ -469,22 +455,15 @@ footer ul {
     gap: 60px;
 }
 
-/* Style each list item */
-/* footer ul li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}  */
-
 /* Style the SVG icons */
 footer svg {
     width: 40px;
     height: 40px;
-    fill: var(--color-gray);
+    fill: var(--color-light-blue);
     transition: fill 0.2s ease;
     /* Smooth transition added */
 }
 
 footer a:hover svg {
-    fill: var(--color-bright-pink);
+    fill: var(--color-dark-purple);
 }
